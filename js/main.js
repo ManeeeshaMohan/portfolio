@@ -43,7 +43,7 @@ function initCarousel() {
       <div class="proj__visual">
         <a href="project.html?id=${p.id}" aria-label="Open ${p.heading}">
           <span class="arrow-badge">${ARROW}</span>
-          <img src="${p.hero}" alt="${p.heading}">
+          <img src="${p.slide}" alt="${p.heading}">
         </a>
       </div>`;
     thumbs.forEach((t, i) => t.classList.toggle("is-active", i === index));

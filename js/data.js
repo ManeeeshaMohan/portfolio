@@ -153,3 +153,18 @@ const PROJECTS = [
     ],
   },
 ];
+
+/* Carousel "slide" images — the exact hero shots used on the Figma Projects
+   frames (pages 4–11). Displayed in a fixed 1.532:1 frame (object-fit: cover),
+   matching the Figma layout precisely. */
+const SLIDES = {
+  logicwiz: "assets/img/logicwiz-slide.jpg",
+  smart: "assets/img/smart-slide.jpg",
+  enoc: "assets/img/enoc-slide.jpg",
+  icici: "assets/img/icici-slide.jpg",
+  globus: "assets/img/globus-slide.jpg",
+  sagar: "assets/img/sagar-slide.jpg",
+  maruti: "assets/img/maruti-slide.jpg",
+  sbi: "assets/img/sbi-slide.jpg",
+};
+PROJECTS.forEach((p) => { p.slide = SLIDES[p.id] || p.hero; });
