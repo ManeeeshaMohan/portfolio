@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Maneesha Mohan</title>
+  <meta name="description" content="About Maneesha Mohan N — creative & publication designer. Experience, education, certification and tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="pill" aria-label="Primary">
+      <a class="pill__avatar" href="index.html"><img src="assets/img/portrait.jpg" alt="Maneesha Mohan" /></a>
+      <a class="pill__link" href="index.html">Home</a>
+      <a class="pill__link" href="about.html">About</a>
+      <a class="pill__link" href="projects.html">Projects</a>
+      <a class="pill__link" href="contact.html">Contacts</a>
+    </nav>
+  </header>
+
+  <main class="page wrap">
+    <section class="about-hero">
+      <div>
+        <h1>About me</h1>
+        <p>
+          I am Maneesha Mohan N, a Creative Designer based in Kerala, India. My
+          journey began in the world of fashion communication, which gave me a
+          unique eye for aesthetics, form, and storytelling. Today, I've
+          translated that foundation into the graphic domain, where I specialise
+          in building engaging and purposeful visuals. I'm deeply passionate
+          about high-impact collaboration and believe that great design should do
+          more than just look good — it should drive innovation and create a
+          genuine connection.
+        </p>
+      </div>
+      <div class="about-hero__img"><img src="assets/img/portrait.jpg" alt="Maneesha Mohan" /></div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Experience</h2>
+      <div class="rows">
+        <div class="rows__item"><span class="r-org">Pagekraft Communications</span><span class="r-role">Senior Designer</span><span class="r-year">2025 — NOW</span></div>
+        <div class="rows__item"><span class="r-org">Stirrup Communications</span><span class="r-role">Publication Designer</span><span class="r-year">2021 — 2025</span></div>
+        <div class="rows__item"><span class="r-org">Resonarz Career</span><span class="r-role">Graphic Designer</span><span class="r-year">2020</span></div>
+        <div class="rows__item"><span class="r-org">Infinite Thinking Solutions</span><span class="r-role">Graphic Designer</span><span class="r-year">2020</span></div>
+        <div class="rows__item"><span class="r-org">Landmark Group</span><span class="r-role">Packaging and Research Designer</span><span class="r-year">2020</span></div>
+        <div class="rows__item"><span class="r-org">Autumn Grey</span><span class="r-role">Creative Designer</span><span class="r-year">2019</span></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Education</h2>
+      <div class="rows">
+        <div class="rows__item"><span class="r-org">National Institute of Fashion Technology</span><span class="r-role">B.Des / Fashion Communication</span><span class="r-year">2016 — 2020</span></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Certification</h2>
+      <div class="rows">
+        <div class="rows__item"><span class="r-org">Foundation of User Experience (UX) Design</span><span class="r-role">Google</span><span class="r-year">2024</span></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="section-title">Tools &amp; Softwares</h2>
+      <div class="tools" id="tools"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span class="foot-left">MANEESHA / PROJECT ARCHIVE</span>
+    <span class="foot-right">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance ↗</a>
+      <span class="foot-info">i</span>
+    </span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // tools equalizer bars
+    const TOOLS = [
+      ["Photoshop", 10], ["Illustrator", 10], ["InDesign", 9], ["Figma", 8],
+      ["After Effects", 6], ["Premier Pro", 6], ["PowerPoint", 8], ["Firefly", 7],
+    ];
+    const wrap = document.getElementById("tools");
+    TOOLS.forEach(([name, lvl]) => {
+      const segs = Array.from({ length: 10 }, (_, i) =>
+        `<span class="tool__seg ${i < lvl ? "on" : ""}"></span>`).join("");
+      const row = document.createElement("div");
+      row.className = "tool";
+      row.innerHTML = `<span class="tool__name">${name}</span><span class="tool__bar">${segs}</span>`;
+      wrap.appendChild(row);
+    });
+  </script>
+</body>
+</html>
