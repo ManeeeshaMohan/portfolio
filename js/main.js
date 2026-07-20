@@ -36,7 +36,7 @@ function initCarousel() {
     const p = PROJECTS[index];
     stage.innerHTML = `
       <div class="proj__meta">
-        <span class="p-no">${p.no} / 08</span>
+        <span class="p-no">${p.no} / ${String(PROJECTS.length).padStart(2, "0")}</span>
         <h1>${p.title}</h1>
         <p class="p-kicker">${p.kicker}</p>
       </div>
