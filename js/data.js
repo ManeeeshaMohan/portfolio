@@ -19,8 +19,8 @@ const PROJECTS = [
     "title": "DESIGN SYSTEM\nLOGICWIZ",
     "heading": "LOGICWIZ",
     "kicker": "Brand Identity / Design System",
-    "cover": "assets/img/logicwiz-1784575768498-69269.jpg",
-    "hero": "assets/img/logicwiz-1784575812704-13474.jpg",
+    "cover": "assets/img/logicwiz-cover.jpg",
+    "hero": "assets/img/logicwiz-phone.jpg",
     "softwares": [
       "Photoshop",
       "Illustrator"
@@ -28,12 +28,11 @@ const PROJECTS = [
     "report": null,
     "desc": "LogicWiz redefines technical mastery by transforming Data Structures and Algorithms into an immersive narrative experience. By blending story-driven quests, visual simulations, and AI-guided learning, the brand demystifies complex logic. My design bridges the gap between clinical code and engaging storytelling, creating an approachable, high-energy identity that turns the “grind” of computer science into a legendary quest.",
     "gallery": [
+      "assets/img/logicwiz-cover.jpg",
       "assets/img/logicwiz-laptop.jpg",
-      "assets/img/logicwiz-grid.jpg",
-      "assets/img/logicwiz-brand.jpg",
-      "assets/img/logicwiz-1784575824849-25619.jpg"
+      "assets/img/logicwiz-brand.jpg"
     ],
-    "slide": "assets/img/logicwiz-1784575760453-61223.jpg"
+    "slide": "assets/img/logicwiz-slide.jpg"
   },
   {
     "id": "smart",
